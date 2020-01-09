@@ -179,3 +179,7 @@ function brojeviTimer() {
         document.getElementById('brojevi-timer').innerHTML = i;
     }, 1000);
 }
+
+function pokreniPonovo() {
+    window.location.href = '';
+}
