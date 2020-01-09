@@ -197,6 +197,38 @@ footer p {
     text-align: center;
 }
 
+@media only screen and (max-width: 1000px) {
+    header,
+    header p {
+        font-size: 0.8rem;
+    }
+    header span {
+        padding: 0.1rem 1rem;
+    }
+    .header-nav ul li a {
+        line-height: 40px;
+        padding: 0 2rem;
+    }
+    section.o-meni {
+        width: 90%;
+        margin: 1rem auto;
+        padding: 0.5rem;
+    }
+    section .biografija p {
+        font-size: 0.9rem;
+    }
+    section .skills {
+        width: 80%;
+    }
+    section .iskustvo {
+        width: 80%;
+    }
+    article#umotvorine {
+        width: 90%;
+        padding: 0.5rem;
+    }
+}
+
 /* Galerija */
 .gallery-container {
     background: #fff;
@@ -232,7 +264,22 @@ footer p {
 .gallery-bottom .selected-image {
     background: #2d3436;
 }
-
+@media only screen and (max-width: 1600px) {
+    .gallery-bottom img {
+        max-height: 100px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .gallery-container {
+        margin: 2rem auto 0 auto;
+    }
+    .big-image {
+        height: 30vh;
+    }
+    .gallery-bottom img {
+        max-height: 90px;
+    }
+}
 /* Naruci */
 .naruci-container {
     width: 80%;
@@ -353,6 +400,26 @@ footer p {
 .naruci-container #plati .naruci:hover {
     box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);
 }
+@media only screen and (max-width: 1000px) {
+    .naruci-container {
+        width: 90%;
+    }
+    .naruci-container input {
+        font-size: 0.9rem;
+    }
+    .naruci-container .input-inline {
+        display: block;
+    }
+    .naruci-container .input-inline input {
+        width: 60%;
+    }
+    .naruci-container .input-block input {
+        width: 60%;
+    }
+    .naruci-container .input-block select {
+        width: 60%;
+    }
+}
 
 /* Brojevi */
 #brojevi-container {
@@ -415,4 +482,26 @@ p.brojevi-uputstvo {
 }
 #brojevi-reset:hover {
     box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.35);
+}
+@media only screen and (max-width: 800px) {
+    #brojevi-container {
+        width: 400px;
+        height: 300px;
+    }
+    #brojevi-container .broj-polje {
+        font-size: 1.2rem;
+    }
+    #brojevi-timer {
+        width: 400px;
+        font-size: 2rem;
+    }
+    p.brojevi-uputstvo {
+        width: 400px;
+        font-size: 0.8rem;
+    }
+    #brojevi-reset {
+        display: none;
+        width: 400px;
+        font-size: 1.5rem;
+    }
 }
