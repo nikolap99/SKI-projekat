@@ -50,6 +50,7 @@ function isprazniKorpu() {
         <h1>Korpa:</h1>
         <div id="isprazni-korpu" onclick="isprazniKorpu()">Isprazni korpu</div>
     `;
+    document.getElementById('plati').style.display = 'none';
 }
 
 function naruciHranu() {
