@@ -5,26 +5,102 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Nikola Pavlov</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <script src="assets/scripts/script.js"></script>
     </head>
-    <body>
-        <header>
-            Header
+    <body onload="umotvorine()">
+        <header id="ad">
+            <span onclick="removeAd()">x</span>
+            <a href="https://duckduckgo.com/" target="_blank">
+                <h2>DuckDuckGo</h2>
+                <p>
+                    Isprobajte internet pretrazivac kome je stalo do vase
+                    privatnosti!
+                </p>
+            </a>
         </header>
-        <nav>
+        <nav class="header-nav">
             <ul>
-                <li><a href="#">Galerija</a></li>
-                <li><a href="#">Naruci</a></li>
-                <li><a href="#">Lavirint</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+                <li><a href="naruci.html">Naruči</a></li>
+                <li><a href="brojevi.html">Brojevi</a></li>
             </ul>
         </nav>
-        <section>
-            Lorem ipsum
+
+        <section class="o-meni">
+            <h1>O meni:</h1>
+            <div class="biografija">
+                <p>
+                    Rođen 16. aprila 1999. u Pančevu, Srbiji. Počeo sam da se
+                    bavim programiranjem u 7. razredu osnovne škole, kada počeo
+                    da učim osnove HTML-a i CSS-a i pravio jednostavne sajtove.
+                    U srednjoj školi počinjem da radim na komercijalnim
+                    projektima i ozbiljnije krećem da učim JavaScript. Za
+                    potrebu različitih projekata, kasnije sam započeo sa C#
+                    jezikom i izrađivao sam igrice pomoću Unity Game Engine-a.
+                    >Posle sam se potpuno posvetio web tehnologijama, učeći
+                    React framework za JavaScript. >Kako da učim ali i da delim
+                    svoje znanje, 2016. godine sam ko-osnovao prvi CoderDojo
+                    klub u Srbiji - klub za mlade, gde smo pravili radionice i
+                    predavanja na temu web tehnologija, game development-a,
+                    elektronike i IoT-a i slično. Tako smo i organizovali prvi
+                    hakaton u Pančevu. >Trenutno, pored React frameworka i Node
+                    okruženja, izučavam SCRUM okvir za menadžment i kako da
+                    najbolje primenim agilne metodologije.
+                </p>
+                <div class="slika">
+                    <img src="assets/images/nikola.jpg" alt="Nikola Pavlov" />
+                    <span>Hacking Politics Hackathon 2016.</span>
+                </div>
+            </div>
+            <h1>Koristim:</h1>
+            <div class="skills">
+                <span>JavaScript</span><span>ES6+</span><span>React</span
+                ><span>Angular</span><span>CSS</span><span>SASS/SCSS</span
+                ><span>Node.js</span><span>MongoDB</span><span>PostgreSQL</span
+                ><span>C#</span><span>Unity</span><span>GIT/Github</span>
+            </div>
+            <h1>Radno iskustvo:</h1>
+            <div class="iskustvo">
+                <div class="posao">
+                    <h2>SevenBridges</h2>
+                    <h3>Angular Developer Intern (jul 2019 - oct 2019)</h3>
+                    <p>
+                        Radio sam u agilnom ogruženju na izradi interne
+                        platforme za ljudske resurse.
+                    </p>
+                </div>
+                <div class="posao">
+                    <h2>365ADS</h2>
+                    <h3>Front-end Developer (2016 - 2018)</h3>
+                    <p>
+                        Izrada sajtova i interaktivnih igrica u svrhe marketinga
+                        za klijentske organizacije. Neki od primera su
+                        brendirane memory igrice ili interfejs za pametna
+                        ogledala.
+                    </p>
+                </div>
+                <div class="posao">
+                    <h2>CoderDojo Pančevo</h2>
+                    <h3>Co-founder i Mentor (2016 - 2018)</h3>
+                    <p>
+                        Mentorisao sam i koordinisao mlade ljude na radionicama
+                        iz oblasti web tehnologija, izrade igrica i slično.
+                    </p>
+                </div>
+            </div>
         </section>
-        <article>
-            Jedna od 5 umotvorina svakih 10 sekundi
+        <article id="umotvorine">
+            <div class="umotvorine-container">
+                <h1>Umotvorine</h1>
+                <p id="umotvorine-text">
+                    Umotvorina 1
+                </p>
+            </div>
         </article>
         <footer>
-            Footer
+            <p>&copy; 2019 Nikola Pavlov</p>
         </footer>
     </body>
 </html>

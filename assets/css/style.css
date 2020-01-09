@@ -1,0 +1,409 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('assets/fonts/Roboto.ttf') format('ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background: #ecf0f1;
+    font-family: 'Roboto';
+}
+/* Reklama */
+header {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(#74b9ff, #55efc4);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    animation-name: header-bg;
+    animation-direction: alternate;
+    animation-delay: 0;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes header-bg {
+    100% {
+        background: linear-gradient(#55efc4, #74b9ff);
+    }
+}
+header a {
+    text-decoration: none;
+    color: #000;
+    animation-name: header-a-color;
+    animation-direction: alternate;
+    animation-delay: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes header-a-color {
+    50% {
+        color: #b71540;
+    }
+    100% {
+        color: #0c2461;
+    }
+}
+header span {
+    display: block;
+    cursor: pointer;
+    margin: 0;
+    color: #fff;
+    background: #d63031;
+    padding: 0.2rem 2rem;
+    float: right;
+}
+header span:hover {
+    background: #ff7675;
+}
+header h2 {
+    display: block;
+    margin: 0;
+    padding-top: 1rem;
+}
+header p {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+/* .header-navigacija */
+.header-nav {
+    color: #fff;
+    background: #2d3436;
+    width: 100%;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+}
+.header-nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+.header-nav ul li {
+    display: inline-block;
+}
+.header-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: middle;
+    padding: 0 5rem;
+    transition: all 0.3s;
+}
+.header-nav ul li a:hover {
+    background: #636e72;
+}
+
+/* Sekcija o nama */
+section.o-meni {
+    background: #fff;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
+}
+section h1 {
+    text-align: center;
+    margin: 1rem 0;
+}
+section .biografija {
+    text-align: center;
+}
+section .biografija p {
+    display: inline-block;
+    margin: 1rem;
+    font-size: 1.1rem;
+    width: 40%;
+    vertical-align: middle;
+}
+section .biografija .slika {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+    width: 40%;
+    vertical-align: middle;
+}
+section .biografija .slika img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+}
+section .skills {
+    text-align: center;
+    width: 40%;
+    background: #dfe6e9;
+    margin: 2rem auto;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+}
+section .skills span {
+    display: inline-block;
+    background: #2d3436;
+    color: #fff;
+    padding: 0.5rem;
+    margin: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    transition: all 0.3s;
+}
+section .skills span:hover {
+    transform: scale(1.1);
+}
+
+section .iskustvo {
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+}
+section .iskustvo .posao {
+    background: #dfe6e9;
+    padding: 1rem;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Umotvorine */
+article#umotvorine {
+    background: #fff;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
+}
+.umotvorine-container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.umotvorine-container p {
+    margin: 1rem 0;
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 3rem;
+    width: 100%;
+    background: #2d3436;
+}
+footer p {
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Galerija */
+.gallery-container {
+    background: #fff;
+    margin: 5rem auto 0 auto;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);
+}
+.big-image {
+    height: 50vh;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+}
+.big-image img {
+    margin-top: 1rem;
+    height: 100%;
+}
+
+.gallery-bottom {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+}
+.gallery-bottom img {
+    max-height: 140px;
+    padding: 0.5rem;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.gallery-bottom img:hover {
+    opacity: 0.5;
+}
+.gallery-bottom .selected-image {
+    background: #2d3436;
+}
+
+/* Naruci */
+.naruci-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    text-align: center;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);
+}
+.naruci-container h1 {
+    margin: 1rem;
+}
+.naruci-container input {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    outline: none;
+}
+.naruci-container .input-inline {
+    display: inline-block;
+    margin: 0 1%;
+}
+.naruci-container .input-block input {
+    outline: none;
+    width: 41%;
+}
+.naruci-container .input-block select {
+    width: 41%;
+    height: 150px;
+}
+
+.naruci-container .hrana-container {
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 80%;
+}
+.naruci-container .hrana-container .hrana {
+    width: 20%;
+    height: 150px;
+    display: inline-block;
+    position: relative;
+    background: #dfe6e9;
+    cursor: pointer;
+}
+.naruci-container .hrana-container .hrana img {
+    max-height: 100%;
+    width: auto;
+}
+.naruci-container .hrana-container .hrana .text-container {
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    transition: all 0.3s;
+}
+.naruci-container .hrana-container .hrana .text-container p {
+    position: absolute;
+    color: #fff;
+    top: 40%;
+    left: 0;
+    right: 0;
+}
+.naruci-container .hrana-container .hrana .text-container:hover {
+    opacity: 0.8;
+}
+
+.naruci-container #korpa {
+    width: 80%;
+    margin: 0 auto;
+}
+.naruci-container #korpa .korpa-item {
+    display: inline-block;
+    background: #dfe6e9;
+    width: 20%;
+    height: 150px;
+}
+.naruci-container #korpa .korpa-item img {
+    max-height: 100%;
+    width: auto;
+}
+.naruci-container #korpa #isprazni-korpu {
+    display: none;
+    padding: 0.5rem 2rem;
+    background: #ff7675;
+    font-size: 1.1rem;
+    border: 0;
+    outline: 0;
+    width: 50%;
+    margin: 1rem auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.naruci-container #korpa #isprazni-korpu:hover {
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.naruci-container #plati {
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+}
+.naruci-container #plati .naruci {
+    padding: 2rem 2rem;
+    background: #55efc4;
+    font-size: 1.1rem;
+    border: 0;
+    outline: 0;
+    width: 50%;
+    margin: 1rem auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.naruci-container #plati .naruci:hover {
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Brojevi */
+#brojevi-container {
+    width: 700px;
+    height: 700px;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+}
+
+#brojevi-container .broj-polje {
+    display: inline-flex;
+    background: #81ecec;
+    margin: 1%;
+    width: 20%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+#brojevi-container .broj-polje:hover {
+    background: #95f5f5;
+    box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.35);
+}
+#brojevi-timer {
+    width: 600px;
+    background: #b8e994;
+    margin: 1rem auto;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 3rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+#brojevi-reset {
+    display: none;
+    width: 600px;
+    background: #b8e994;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2rem;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+#brojevi-reset:hover {
+    box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.35);
+}

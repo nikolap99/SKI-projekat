@@ -5,8 +5,69 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Galerija | Nikola Pavlov</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <script src="assets/scripts/script.js"></script>
     </head>
     <body>
-        Lorem Ipsum
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+                <li><a href="naruci.html">Naruči</a></li>
+                <li><a href="brojevi.html">Brojevi</a></li>
+            </ul>
+        </nav>
+        <div class="gallery-container">
+            <div class="big-image">
+                <img
+                    id="choosen-image"
+                    src="assets/images/galerija/oranicity.jpeg"
+                    alt="big image"
+                />
+            </div>
+            <div class="gallery-bottom">
+                <img
+                    class="selected-image"
+                    onclick="galerija(this)"
+                    src="assets/images/galerija/oranicity.jpeg"
+                    alt="duck"
+                />
+                <img
+                    onclick="galerija(this)"
+                    src="assets/images/galerija/coderdojo-hackathon.jpg"
+                    alt="duck"
+                />
+                <img
+                    onclick="galerija(this)"
+                    src="assets/images/galerija/coderdojo.jpg"
+                    alt="duck"
+                />
+                <img
+                    onclick="galerija(this)"
+                    src="assets/images/galerija/it-konekt.jpg"
+                    alt="duck"
+                />
+                <img
+                    onclick="galerija(this)"
+                    src="assets/images/galerija/macbook.jpg"
+                    alt="duck"
+                />
+                <img
+                    onclick="galerija(this)"
+                    src="assets/images/nikola.jpg"
+                    alt="duck"
+                />
+                <img
+                    onclick="galerija(this)"
+                    src="assets/images/galerija/vr.jpg"
+                    alt="duck"
+                />
+                <img
+                    onclick="galerija(this)"
+                    src="assets/images/galerija/vr2.jpg"
+                    alt="duck"
+                />
+            </div>
+        </div>
     </body>
 </html>

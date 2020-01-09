@@ -5,8 +5,156 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Naruci | Nikola Pavlov</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <script src="assets/scripts/script.js"></script>
     </head>
     <body>
-        Lorem Ipsum
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+                <li><a href="naruci.html">Naruči</a></li>
+                <li><a href="brojevi.html">Brojevi</a></li>
+            </ul>
+        </nav>
+        <div class="naruci-container">
+            <h1>Naruči:</h1>
+            <form>
+                <div class="input-inline">
+                    <label for="ime">Ime:</label>
+                    <input id="ime-polje" name="ime" type="text" />
+                </div>
+                <div class="input-inline">
+                    <label for="prezime">Prezime:</label>
+                    <input id="prezime-polje" name="prezime" type="text" />
+                </div>
+                <div class="input-block">
+                    <label for="adresa">Adresa:</label>
+                    <input id="adresa-polje" name="adresa" type="text" />
+                </div>
+                <div class="input-block">
+                    <label for="email">Email:</label>
+                    <input
+                        id="email-polje"
+                        onkeyup="proveri()"
+                        name="email"
+                        type="email"
+                        value=""
+                    />
+                </div>
+                <div class="hrana-container">
+                    <h1>Izaberi hranu:</h1>
+                    <div class="hrana" onclick="izaberiHranu('hamburger')">
+                        <div class="text-container">
+                            <p>Hamburger</p>
+                        </div>
+                        <img
+                            src="assets/images/naruci/hamburger.jpg"
+                            alt="hamburger"
+                        />
+                    </div>
+                    <div class="hrana" onclick="izaberiHranu('pizza')">
+                        <div class="text-container">
+                            <p>Pizza</p>
+                        </div>
+                        <img src="assets/images/naruci/pizza.jpg" alt="Pizza" />
+                    </div>
+                    <div class="hrana" onclick="izaberiHranu('pomfrit')">
+                        <div class="text-container">
+                            <p>Pomfrit</p>
+                        </div>
+                        <img
+                            src="assets/images/naruci/pomfrit.jpg"
+                            alt="Pomfrit"
+                        />
+                    </div>
+                    <div class="hrana" onclick="izaberiHranu('salata')">
+                        <div class="text-container">
+                            <p>Salata</p>
+                        </div>
+                        <img
+                            src="assets/images/naruci/salata.jpg"
+                            alt="Salata"
+                        />
+                    </div>
+
+                    <div class="hrana" onclick="izaberiHranu('kolac')">
+                        <div class="text-container">
+                            <p>Kolac</p>
+                        </div>
+                        <img src="assets/images/naruci/kolac.jpg" alt="Kolac" />
+                    </div>
+                    <div class="hrana" onclick="izaberiHranu('sladoled')">
+                        <div class="text-container">
+                            <p>Sladoled</p>
+                        </div>
+                        <img
+                            src="assets/images/naruci/sladoled.jpg"
+                            alt="Sladoled"
+                        />
+                    </div>
+                    <div class="hrana" onclick="izaberiHranu('milksejk')">
+                        <div class="text-container">
+                            <p>Milksejk</p>
+                        </div>
+                        <img
+                            src="assets/images/naruci/milksejk.jpg"
+                            alt="Milksejk"
+                        />
+                    </div>
+                    <div class="hrana" onclick="izaberiHranu('palacinka')">
+                        <div class="text-container">
+                            <p>Palacinka</p>
+                        </div>
+                        <img
+                            src="assets/images/naruci/palacinka.jpg"
+                            alt="Palacinka"
+                        />
+                    </div>
+
+                    <div class="hrana" onclick="izaberiHranu('fanta')">
+                        <div class="text-container">
+                            <p>Fanta</p>
+                        </div>
+                        <img src="assets/images/naruci/fanta.jpg" alt="Fanta" />
+                    </div>
+                    <div class="hrana" onclick="izaberiHranu('coca-cola')">
+                        <div class="text-container">
+                            <p>Coca-cola</p>
+                        </div>
+                        <img
+                            src="assets/images/naruci/coca-cola.jpg"
+                            alt="Coca-cola"
+                        />
+                    </div>
+                    <div class="hrana" onclick="izaberiHranu('sprite')">
+                        <div class="text-container">
+                            <p>Sprite</p>
+                        </div>
+                        <img
+                            src="assets/images/naruci/sprite.jpg"
+                            alt="Sprite"
+                        />
+                    </div>
+                    <div class="hrana" onclick="izaberiHranu('pepsi')">
+                        <div class="text-container">
+                            <p>Pepsi</p>
+                        </div>
+                        <img src="assets/images/naruci/pepsi.jpg" alt="Pepsi" />
+                    </div>
+                </div>
+                <div id="korpa">
+                    <h1>Korpa:</h1>
+                    <div id="isprazni-korpu" onclick="isprazniKorpu()">
+                        Isprazni korpu
+                    </div>
+                </div>
+                <div id="plati">
+                    <div onclick="naruciHranu()" class="naruci">
+                        Naruci hranu
+                    </div>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
